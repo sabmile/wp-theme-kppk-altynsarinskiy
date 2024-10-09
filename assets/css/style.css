@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.container {
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 50px;
+	background-color: gainsboro;
+}
+
+.header__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding-bottom: 100px;
+}
+
+.header__bottom {
+	padding: 10px 30px;
+	background-color: chocolate;
+}
+
+.header__menu-list {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.header__menu-list ul {
+	display: none;
+	position: absolute;
+}
+
+.header__menu-list li:hover > ul {
+	display: block;
+	position: absolute;
+	top: 26px;
+}
+
+.header__menu-list li a {
+	padding: 10px 10px;
+}
+
+.header__menu-list li:hover > a{
+	background-color: aliceblue;
+}
+
+
+.header__menu-list ul a {
+	display: block;
+	line-height: 20px;
+}
+
+.header__menu-list ul a {
+	background-color: chocolate;
+}
+
+.header__list-item {
+	padding: 20px 0;
+}
+
+.header__logo-img {
+	width: 150px;
+}
+
+.header__title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.3;
+	width: 400px;
+}
+
+.main {
+	height: 100vh;
+}
+
+.footer {
+	background-color: gainsboro;
+}

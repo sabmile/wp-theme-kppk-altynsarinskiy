@@ -1,0 +1,93 @@
+a { color: #6c7583; text-decoration: none; }
+
+a:hover { text-decoration: underline; cursor: pointer; }
+
+.widget { margin-bottom: 50px; }
+
+/*! ___ widget-sidenav _________________ */
+
+.widget-sidenav { position: absolute; top: -10px; right: 0; padding: 0; margin: 0; }
+
+@media (min-width: 1024px) { 
+   .widget-sidenav { position: static; top: auto; right: auto; margin-bottom: 50px; } }
+   .sidenav-title { cursor: default; color: #003757; font-family: "Open Sans", sans-serif; font-size: 20px; font-weight: bold; padding: 10px 20px; position: relative; min-width: 50px; min-height: 50px; }
+   .sidenav-title .sidenav-title-text { display: none; 
+}
+
+@media (min-width: 1024px) { 
+   .sidenav-title { padding: 20px 30px; font-size: 22px; border-bottom: 1px solid #d9e7ed; }
+   .sidenav-title .sidenav-title-text { display: block; } 
+}
+
+.sidenav-title .sidenav-mobile-toogle { position: absolute; width: 50px; height: 50px; top: 0; right: 0; z-index: 10; cursor: pointer; }
+
+@media (min-width: 1024px) { 
+   .sidenav-title .sidenav-mobile-toogle { display: none; width: 70px; height: 70px; } 
+}
+
+.sidenav-title .sidenav-mobile-toogle:before, .sidenav-title .sidenav-mobile-toogle:after { content: ''; position: absolute; top: 15px; left: 30px; height: 20px; width: 4px; background-color: #6c7583; transform: rotate(45deg); transition: background-color 0.3s; }
+
+.sidenav-title .sidenav-mobile-toogle:after { left: 18px; transform: rotate(-45deg); }
+
+.sidenav-title .sidenav-mobile-toogle:hover:before, .sidenav-title .sidenav-mobile-toogle:hover:after { background-color: #39a4d4; }
+
+.widget.link_alone a:hover{
+   text-decoration: none;
+   color: #39a4d4;
+   transition: color 0.3s;
+}
+.widget.link_alone a{
+   cursor: pointer;
+   color: #003757;
+   transition: color 0.3s;
+}
+
+ul.sidenav { padding: 0; list-style: none; margin: 20px 20px 0; padding-bottom: 20px; display: none; min-width: 260px; }
+
+@media (min-width: 1024px) { 
+   ul.sidenav { min-width: auto; display: block; margin: 20px 30px 0; padding-bottom: 20px; } 
+}
+
+li.sidenav-item { padding: 0 0 10px 0; margin: 0; }
+
+li.sidenav-item a { font-size: 16px; padding-bottom: 5px; transition: color 0.3s; }
+
+li.sidenav-item a:hover { color: #39a4d4; text-decoration: none; }
+
+li.sidenav-item .sidenav-children { list-style: none; margin: 0 0 0 30px; padding: 0; }
+
+li.sidenav-item .sidenav-children.sidenav-closed { display: none; }
+
+li.sidenav-item .sidenav-children li { padding: 3px 0; margin: 0; }
+
+li.sidenav-item .sidenav-children li:before { content: '»'; margin-left: -20px; margin-right: 10px; }
+
+li.sidenav-item .sidenav-children li a { color: #9dadb7; font-size: 14px; transition: color 0.3s; }
+
+li.sidenav-item .sidenav-children li a:hover { color: #39a4d4; text-decoration: none; }
+
+li.sidenav-item .open-children { position: relative; display: inline-block; width: 14px; height: 14px; top: 1px; margin-left: 6px; cursor: pointer; }
+
+li.sidenav-item .open-children:before, li.sidenav-item .open-children:after { content: ''; position: absolute; display: block; width: 3px; height: 10px; top: 3px; left: 9px; background: #6c7583; transition: background 0.3s; transform: rotate(45deg); }
+
+li.sidenav-item .open-children:before { left: 3px; transform: rotate(-45deg); }
+
+li.sidenav-item .open-children:hover:before, li.sidenav-item .open-children:hover:after { background: #39a4d4; }
+
+li.sidenav-item .open-children.now-closed:before, li.sidenav-item .open-children.now-closed:after { top: 5px; left: 5px; }
+
+li.sidenav-item .open-children.now-closed:before { top: 0; }
+
+.widget-sidenav.now-opened .sidenav-title { border-bottom: 1px solid #d9e7ed; }
+
+.widget-sidenav.now-opened .sidenav-title-text { display: block; }
+
+.widget-sidenav.now-opened .sidenav-mobile-toogle { border-left: 1px solid #d9e7ed; }
+
+.widget-sidenav.now-opened .sidenav-mobile-toogle:before, .widget-sidenav.now-opened .sidenav-mobile-toogle:after { top: 10px; left: 23px; height: 30px; width: 1px; background-color: #d9e7ed; transform: rotate(45deg); transition: background-color 0.3s; }
+
+.widget-sidenav.now-opened .sidenav-mobile-toogle:after { transform: rotate(-45deg); }
+
+.widget-sidenav.now-opened .sidenav-mobile-toogle:hover:before, .widget-sidenav.now-opened .sidenav-mobile-toogle:hover:after { background-color: #39a4d4; }
+
+.widget-sidenav.now-opened ul.sidenav { display: block; }

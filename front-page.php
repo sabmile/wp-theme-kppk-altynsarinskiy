@@ -1,11 +1,17 @@
 <?php get_header(); ?>
 
-	<main class="main">
+	<div class="container">
 
-		<div class="content">
-			
-		</div>
+		<main class="main">
 
-	</main>
+			<div class="content">
+				
+			</div>
+
+			<?php get_sidebar(); ?>
+
+		</main>
+
+	</div>
 
 <?php get_footer(); ?>
